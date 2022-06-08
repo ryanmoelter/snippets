@@ -21,7 +21,14 @@ android {
 
 dependencies {
     implementation(project(":shared"))
-    implementation("com.google.android.material:material:1.4.0")
-    implementation("androidx.appcompat:appcompat:1.3.1")
-    implementation("androidx.constraintlayout:constraintlayout:2.1.0")
+
+    implementation(libs.magellanx.compose)
+    testImplementation(libs.magellanx.test)
+
+    implementation(libs.bundles.compose)
+    debugImplementation(libs.bundles.compose.debug)
+    androidTestImplementation(libs.bundles.compose.android.test)
+
+    implementation(libs.bundles.android)
+    testImplementation(libs.bundles.test)
 }

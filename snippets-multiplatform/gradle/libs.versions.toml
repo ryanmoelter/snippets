@@ -81,43 +81,43 @@ ktx-core = { module = "androidx.core:core-ktx", version = "1.7.0" }
 [bundles]
 # Compose
 compose = [
-    "compose-ui",
-    "compose-ui-tooling-preview",
-    "compose-foundation",
-    "compose-material3",
-    "compose-material2",
-    "compose-material-icons-core",
-    "compose-material-icons-extended",
-    "activity-compose",
-    "accompanist-systemuicontroller",
-    "accompanist-drawablepainter"
+  "compose-ui",
+  "compose-ui-tooling-preview",
+  "compose-foundation",
+  "compose-material3",
+  "compose-material2",
+  "compose-material-icons-core",
+  "compose-material-icons-extended",
+  "activity-compose",
+  "accompanist-systemuicontroller",
+  "accompanist-drawablepainter"
 ]
 compose-android-test = ["compose-ui-test"]
 compose-debug = ["compose-ui-tooling", "compose-ui-test-manifest"]
 
 # Android
 android = [
-    "material",
-    "appcompat",
-    "constraintlayout",
-    "ktx-core"
+  "material",
+  "appcompat",
+  "constraintlayout",
+  "ktx-core"
 ]
 
 database = [
-    "sqldelight-driver-android",
-    "sqldelight-coroutines-extensions"
+  "sqldelight-driver-android",
+  "sqldelight-coroutines-extensions"
 ]
 
 # Unit tests
 test = [
-    "kotest-assertions-core",
-    "robolectric",
-    "androidx-test-core",
-    "androidx-test-core-ktx"
+  "kotest-assertions-core",
+  "robolectric",
+  "androidx-test-core",
+  "androidx-test-core-ktx"
 ]
 
 # Integration tests
 android-test = [
-    "androidx-test-ext-junit",
-    "espresso-core",
+  "androidx-test-ext-junit",
+  "espresso-core",
 ]

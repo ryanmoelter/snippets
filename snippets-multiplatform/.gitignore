@@ -1,7 +1,12 @@
 *.iml
 .gradle
 /local.properties
-.idea
+.idea/*
+!.idea/codeStyles/
+!.idea/inspectionProfiles/
+iosApp/.idea/*
+!iosApp/.idea/codeStyles/
+!iosApp/.idea/inspectionProfiles/
 .DS_Store
 /build
 */build
@@ -9,3 +14,13 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+## User settings
+xcuserdata/
+
+## Xcode 8 and earlier
+*.xcscmblueprint
+*.xccheckout
+
+## Cocoapods
+iosApp/Pods

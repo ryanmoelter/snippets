@@ -9,9 +9,13 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.rounded.Star
+import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -34,7 +38,7 @@ class MainActivity : AppCompatActivity() {
       MaterialTheme {
         // In a real app, we should provide SharedDimensions via dependency injection
         CompositionLocalProvider(LocalDimensions provides SharedDimensions()) {
-          Content()
+          HomeScreen()
         }
       }
     }
@@ -42,7 +46,7 @@ class MainActivity : AppCompatActivity() {
 }
 
 @Composable
-fun Content() {
+fun HomeScreen() {
   LazyColumn {
     item {
       Text(
@@ -63,6 +67,13 @@ fun Content() {
           ),
         verticalAlignment = Alignment.CenterVertically
       ) {
+        Icon(
+          Icons.Rounded.Star,
+          contentDescription = "Star icon",
+          modifier = Modifier
+            .padding(end = Dimensions.intraItemSpace())
+            .size(Dimensions.homeScreen.iconSize())
+        )
         Column(Modifier.weight(1f)) {
           Text(sampleItem.primaryText, fontWeight = FontWeight.Bold)
           Spacer(modifier = Modifier.height(Dimensions.intraItemSpace()))
@@ -83,7 +94,7 @@ fun Content() {
 fun PreviewContent() {
   MaterialTheme {
     CompositionLocalProvider(LocalDimensions provides SharedDimensions()) {
-      Content()
+      HomeScreen()
     }
   }
 }

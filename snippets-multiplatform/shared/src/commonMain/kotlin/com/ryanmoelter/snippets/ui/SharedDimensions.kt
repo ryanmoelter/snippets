@@ -12,4 +12,10 @@ class SharedDimensions {
   val minimumTouchTargetSize: SharedDp = 48.dp
   val dividerThickness: SharedDp = 1.dp
   val cornerRadius: SharedDp = 16.dp
+
+  val homeScreen = HomeScreen()
+
+  class HomeScreen {
+    val iconSize: SharedDp = 24.dp
+  }
 }

@@ -5,7 +5,7 @@ struct ContentView: View {
   @EnvironmentObject
   var dimensions: SharedDimensions
 
-	var body: some View {
+  var body: some View {
     ScrollView {
       LazyVStack(alignment: .leading, spacing: 0) {
         Spacer(minLength: dimensions.verticalEdgeSpace.pt())
@@ -15,6 +15,12 @@ struct ContentView: View {
         Spacer(minLength: dimensions.interItemSpace.pt())
         ForEach(SampleDataKt.sampleItems, id: \.primaryText) { item in
           HStack(alignment: .center, spacing: dimensions.intraItemSpace.pt()) {
+            Image(systemName: "star.fill")
+              .frame(
+                width: dimensions.homeScreen.iconSize.pt(),
+                height: dimensions.homeScreen.iconSize.pt()
+              )
+              .padding(.trailing, dimensions.intraItemSpace.pt())
             VStack(alignment: .leading, spacing: dimensions.intraItemSpace.pt()) {
               Text(item.primaryText)
                 .fontWeight(.bold)

@@ -12,6 +12,7 @@
 		1258C4DAB5DC33D6DAE27D2D /* Pods_iosApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7D4739A55AD354723BA25A9 /* Pods_iosApp.framework */; };
 		2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB032600AC8F00CF470E /* iOSApp.swift */; };
 		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
+		C62E31D62852BA49009EB246 /* InteropExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62E31D52852BA49009EB246 /* InteropExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		7555FF82242A565900829871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7D4739A55AD354723BA25A9 /* Pods_iosApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iosApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C62E31D52852BA49009EB246 /* InteropExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteropExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				7555FF8C242A565B00829871 /* Info.plist */,
 				2152FB032600AC8F00CF470E /* iOSApp.swift */,
 				058557D7273AAEEB004C7B11 /* Preview Content */,
+				C62E31D52852BA49009EB246 /* InteropExtensions.swift */,
 			);
 			path = iosApp;
 			sourceTree = "<group>";
@@ -90,7 +93,6 @@
 				14A2923A569CC7145CF2119D /* Pods-iosApp.debug.xcconfig */,
 				38BC9EBC1D5E702242C46FD1 /* Pods-iosApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -190,6 +192,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C62E31D62852BA49009EB246 /* InteropExtensions.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
 				7555FF83242A565900829871 /* ContentView.swift in Sources */,
 			);
